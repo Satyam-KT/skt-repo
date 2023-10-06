@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+    <script>
+        const randomColor = () =>{
+            let hexColor = console.log(Math.floor((Math.random() * 16785689)).toString(16));
+            return "#"+hexColor;
+        };
+
+        // let intervalid;
+        // const startinterval = () => {
+            const changeBg = () => {
+                document.body.style.backgroundColor = "#234534";
+                // console.log("the time is", Date.now(), document.body);
+            };
+        //     intervalid ? (intervalid = setInterval(changeBg,1000)) : null;
+        // };
+
+        document.querySelector("#start").addEventListener("click",changeBg);
+        // document.querySelector("#stop").addEventListener("click",);
+
+    </script>
+</html>
